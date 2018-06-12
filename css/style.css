@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background-color: #ffffd9;
+}
+
+#container {
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+
+
+#numbers::before {
+  content: "10";
+  animation: finalcountdown 11s forwards 1s;
+  color: #00122e;
+  font-size: 150px;
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+@keyframes finalcountdown {
+    10% {content: "9";}
+    20% {content: "8";}
+    30% {content: "7";}
+    40% {content: "6";}
+    50% {content: "5";}
+    60% {content: "4";}
+    70% {content: "3";}
+    80% {content: "2";}
+    90% {content: "1";}
+    100% {content: "I love CSS";}
+}
+
